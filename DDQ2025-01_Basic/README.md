@@ -1,7 +1,8 @@
-# 🧠 DataDevQuest 2025-01: Generate PDF Using REST API by Changing Parameter (Intermediate)
+# 📄 DataDevQuest 2025-01: Generate PDF Using REST API (Beginner)
 
-This project is a solution to the [DataDevQuest 2025-01 challenge](https://datadevquest.com/ddq2025-01-generate-pdf-using-rest-api-by-changing-parameter-intermediate/).  
-The goal: **Generate multiple Tableau dashboard PDFs by dynamically changing parameter values** via REST API or direct URL manipulation — and merge them into one PDF.
+This repository contains a simple Python solution to the [DataDevQuest 2025-01 Beginner Challenge](https://datadevquest.com/ddq2025-01-generate-pdf-using-rest-api-beginner/)
+
+The goal: **download a Tableau dashboard as a PDF using the Tableau Cloud** via REST API.
 
 ---
 
@@ -9,9 +10,8 @@ The goal: **Generate multiple Tableau dashboard PDFs by dynamically changing par
 
 - Python 3.7+
 - `tableauserverclient`
-- `PyPDF2`
 
 Install dependencies:
 
 ```bash
-pip install tableauserverclient PyPDF2
+pip install tableauserverclient
