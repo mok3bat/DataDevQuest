@@ -18,8 +18,9 @@ This is particularly useful when migrating workbooks between environments (e.g.,
 
 - Python 3.7+
 - `tableauserverclient`
+- `requests`
 
 Install dependencies:
 
 ```bash
-pip install tableauserverclient
+pip install tableauserverclient requests
