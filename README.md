@@ -1,6 +1,6 @@
 # 📘 DataDevQuest 2025 
 
-This repository contains my solution to the **"Introduction to"** challenges from [DataDevQuest.com](https://datadevquest.com/introduction-to-datadev-quest/), part of Tableau's DataDev program.
+This repository contains my solution to the **"challenges"**  from [DataDevQuest.com](https://datadevquest.com/introduction-to-datadev-quest/), part of Tableau's DataDev program.
 
 ## 🚀 About the Challenge
 
