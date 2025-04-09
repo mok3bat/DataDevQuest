@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "542cb50e-055d-4248-81cd-ae1bd4d0d3e2",
+		"name": "DDQ2025_03-Advanced",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30535754"
+	},
+	"item": [
+		{
+			"name": "REST_API_SIGN_IN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"credentials\": {\n        \"personalAccessTokenName\": \"TEST_DDQ\",\n        \"personalAccessTokenSecret\": \"/k/eEewTSxWGMKlZo--vvqWvaVcKhcnsZUoAfLLX3KlbSoyjo\",\n        \"site\": {\n            \"contentUrl\": \"setitsandboxdev427435\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10ax.online.tableau.com/api/3.24/auth/signin",
+					"protocol": "https",
+					"host": [
+						"10ax",
+						"online",
+						"tableau",
+						"com"
+					],
+					"path": [
+						"api",
+						"3.24",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test_VDS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-tableau-auth",
+						"value": "Ka-24HycQZ2LvPEjXEiapg|bvJOU1Qy52LynkqajjJ8Gnk8j8210-4b4b-4dbf-9212-6a56bca56d8f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"datasource\": {\n        \"datasourceLuid\": \"5ae17e46-6da8-48ce-91f8-bfc7f0507f0d\"\n    },\n    \"options\": {\n        \"debug\": true\n    },\n    \"query\": {\n        \"fields\": [\n            {\n                \"fieldCaption\": \"Region\"\n            },\n            {\n                \"fieldCaption\": \"Sales\",\n                \"function\": \"SUM\"\n            }\n        ],\n        \"filters\": [\n            {\n                \"field\": {\n                    \"fieldCaption\": \"Category\"\n                },\n                \"filterType\": \"SET\",\n                \"values\": [\n                    \"Furniture\",\n                    \"Technology\"\n                ],\n                \"exclude\": false\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://10ax.online.tableau.com/api/v1/vizql-data-service/query-datasource",
+					"protocol": "https",
+					"host": [
+						"10ax",
+						"online",
+						"tableau",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vizql-data-service",
+						"query-datasource"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
